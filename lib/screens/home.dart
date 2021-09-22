@@ -24,10 +24,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
         extendBodyBehindAppBar: true,
         //reusable appbar Widget
         appBar: MyAppbar(
-          title: const Text(
-            "Home",
-          ),
-          // tabController: tabcontroller,
+          title: const Text("Home"),
         ),
         //darawer
         drawer: const MyDrawer(),
@@ -36,9 +33,9 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
         //tabview
         body: const TabBarView(
           children: [
-            FirstTab(),//tabview widget 1
-            SecondTab(),//tabview widget 2
-            ThirdTab(),//tabview widget 3
+            FirstTab(), //tabview widget 1
+            SecondTab(), //tabview widget 2
+            ThirdTab(), //tabview widget 3
           ],
         ),
       ),

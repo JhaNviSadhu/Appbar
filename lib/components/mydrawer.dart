@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//drawer left to right
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
 
@@ -13,6 +14,7 @@ class MyDrawer extends StatelessWidget {
   }
 }
 
+//drawer rigth to left
 class MyEndDrawer extends StatelessWidget {
   const MyEndDrawer({Key? key}) : super(key: key);
 

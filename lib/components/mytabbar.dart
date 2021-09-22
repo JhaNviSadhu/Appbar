@@ -6,15 +6,25 @@ class MyTabbar extends TabBar {
     required List<Widget> tabs,
   }) : super(
           key: key,
+          // tabs contains multipalwidget
           tabs: tabs,
+          //the color of indivator
           indicatorColor: Colors.red,
+          //indicator size  by default is TabBarIndicatorSize.tab
           indicatorSize: TabBarIndicatorSize.label,
-          labelColor: Colors.red,
+          //label color
+          labelColor: Colors.black,
+          //physics on scroll tabs
           physics: const BouncingScrollPhysics(),
+          //unselected label color
           unselectedLabelColor: Colors.blue,
+          //style of label
           labelStyle: const TextStyle(fontSize: 20),
-          padding: const EdgeInsets.all(0),
+          //padding for all aliments of appbar
+          padding: const EdgeInsets.all(10),
+          // label padding
           labelPadding: const EdgeInsets.all(10),
+          //indicator padding
           indicatorPadding: const EdgeInsets.all(5),
         );
 }

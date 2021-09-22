@@ -12,12 +12,12 @@ class MyAppbar extends AppBar {
           leading: Row(
             children: [
               IconButton(
-                  onPressed: () {},
+                  onPressed: () => print("Clicked on leading 1"),
                   icon: const Icon(
                     Icons.account_circle,
                   )),
               IconButton(
-                  onPressed: () {},
+                  onPressed: () => print("Clicked on leading 2"),
                   icon: const Icon(
                     Icons.account_circle,
                   )),
@@ -28,11 +28,11 @@ class MyAppbar extends AppBar {
           //action will put widget to the right side
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () => print("Clicked on action 1"),
               icon: const Icon(Icons.notifications),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () => print("Clicked on action 2"),
               icon: const Icon(Icons.more_vert_rounded),
             ),
           ],
@@ -54,24 +54,27 @@ class MyAppbar extends AppBar {
           leadingWidth: 100,
           //shadow color of appbar
           shadowColor: Colors.green,
+          //by shape we can give roundedcorner to appbar
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30),
               bottomRight: Radius.circular(30),
             ),
           ),
+          //the spacing arround the title
           titleSpacing: 0,
+          //opacity of appbar
           toolbarOpacity: 1,
+          //height of appbar
           // toolbarHeight: 100,
-          excludeHeaderSemantics: false,
+          //for center title
           centerTitle: true,
-          bottom: MyTabbar(
-            tabs: const [
-              Text(
-                "Home",
-              ),
-              Icon(Icons.home),
-              Icon(Icons.home),
+          //tabbar after a appbar
+          bottom: const MyTabbar(
+            tabs: [
+              Text("Home"), //first tab
+              Icon(Icons.home), //second tab
+              Icon(Icons.home), //third tab
             ],
           ),
         );

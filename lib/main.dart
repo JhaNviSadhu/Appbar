@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      //for remove debugshow banner
       debugShowCheckedModeBanner: false,
-      
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       //entry point of application
-      home:Home(),
+      home: Home(),
     );
   }
 }
