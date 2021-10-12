@@ -8,6 +8,7 @@ class MyAppbar extends AppBar {
     required Widget title,
   }) : super(
           key: key,
+          
           //leading will put a widget to the left side of appbar
           leading: Row(
             children: [

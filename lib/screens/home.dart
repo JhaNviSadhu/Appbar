@@ -16,7 +16,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     //controller for tabbar
-    var tabcontroller = TabController(length: 3, vsync: this);
+    // var tabcontroller = TabController(length: 3, vsync: this);
     return DefaultTabController(
       length: 3,
       child: Scaffold(
